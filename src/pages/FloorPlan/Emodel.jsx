@@ -10,11 +10,11 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import EmodelInline from "../../components/EmodelInline/EmodelInline";
 
 const menuContents = [
-  { title: "84B", url: "/FloorPlan/59A" },
-  { title: "84D", url: "/FloorPlan/59B" },
-  { title: "94A", url: "/FloorPlan/84A" },
-  { title: "101A", url: "/FloorPlan/84B" },
-  // { title: "84A", url: "/FloorPlan/114A" },
+  { title: "59A㎡", url: "/FloorPlan/59A" },
+  { title: "59B㎡", url: "/FloorPlan/59B" },
+  { title: "84A㎡", url: "/FloorPlan/84A" },
+  { title: "84B㎡", url: "/FloorPlan/84B" },
+  { title: "84C㎡", url: "/FloorPlan/114A" },
   // { title: "84B", url: "/FloorPlan/114B" },
   { title: "E-모델하우스", url: "/FloorPlan/Emodel" },
 ];
