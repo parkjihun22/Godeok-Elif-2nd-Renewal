@@ -113,7 +113,7 @@ const page = ({
 export const seoPages = {
   home: page({
     path: "/",
-    title: "엘리프 고덕 센트럴하이",
+    title: "▪엘리프 고덕 센트럴하이",
     description: siteSeo.defaultDescription,
     menu: "홈",
     priority: 1,
