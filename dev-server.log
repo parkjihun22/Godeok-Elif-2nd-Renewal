@@ -106,3 +106,209 @@ src\pages\SalesInfo\SalesInfoGuide.jsx
 [39m[22m
 
 webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\UnitplanBox\unitPlanData.js
+  Line 6:8:  'unit06' is defined but never used  no-unused-vars
+
+src\pages\BusinessGuide\BusinessGuide2.jsx
+  Line 9:8:    'page1' is defined but never used                    no-unused-vars
+  Line 21:12:  'isImageVisible' is assigned a value but never used  no-unused-vars
+
+src\pages\BusinessGuide\BusinessGuide3.jsx
+  Line 9:8:   'page1' is defined but never used                    no-unused-vars
+  Line 22:9:  'isImageVisible' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan1.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan2.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan3.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 26:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 26:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan4.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan5.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan6.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\SalesInfo\SalesInfoGuide.jsx
+  Line 11:8:   'page1' is defined but never used                     no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used   no-unused-vars
+  Line 50:9:   'handleImageLoad' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\UnitplanBox\unitPlanData.js
+  Line 6:8:  'unit06' is defined but never used  no-unused-vars
+
+src\pages\BusinessGuide\BusinessGuide2.jsx
+  Line 9:8:    'page1' is defined but never used                    no-unused-vars
+  Line 21:12:  'isImageVisible' is assigned a value but never used  no-unused-vars
+
+src\pages\BusinessGuide\BusinessGuide3.jsx
+  Line 9:8:   'page1' is defined but never used                    no-unused-vars
+  Line 22:9:  'isImageVisible' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan1.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan2.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan3.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 26:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 26:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan4.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan5.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan6.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\SalesInfo\SalesInfoGuide.jsx
+  Line 11:8:   'page1' is defined but never used                     no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used   no-unused-vars
+  Line 50:9:   'handleImageLoad' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\UnitplanBox\unitPlanData.js
+  Line 6:8:  'unit06' is defined but never used  no-unused-vars
+
+src\pages\BusinessGuide\BusinessGuide2.jsx
+  Line 9:8:    'page1' is defined but never used                    no-unused-vars
+  Line 21:12:  'isImageVisible' is assigned a value but never used  no-unused-vars
+
+src\pages\BusinessGuide\BusinessGuide3.jsx
+  Line 9:8:   'page1' is defined but never used                    no-unused-vars
+  Line 22:9:  'isImageVisible' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan1.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan2.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan3.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 26:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 26:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan4.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan5.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan6.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\SalesInfo\SalesInfoGuide.jsx
+  Line 11:8:   'page1' is defined but never used                     no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used   no-unused-vars
+  Line 50:9:   'handleImageLoad' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\UnitplanBox\unitPlanData.js
+  Line 6:8:  'unit06' is defined but never used  no-unused-vars
+
+src\pages\BusinessGuide\BusinessGuide2.jsx
+  Line 9:8:    'page1' is defined but never used                    no-unused-vars
+  Line 21:12:  'isImageVisible' is assigned a value but never used  no-unused-vars
+
+src\pages\BusinessGuide\BusinessGuide3.jsx
+  Line 9:8:   'page1' is defined but never used                    no-unused-vars
+  Line 22:9:  'isImageVisible' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan1.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan2.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan3.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 26:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 26:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan4.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan5.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\FloorPlan\FloorPlan6.jsx
+  Line 10:8:   'page1' is defined but never used                       no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used     no-unused-vars
+  Line 27:26:  'setIsImage2Loaded' is assigned a value but never used  no-unused-vars
+
+src\pages\SalesInfo\SalesInfoGuide.jsx
+  Line 11:8:   'page1' is defined but never used                     no-unused-vars
+  Line 27:10:  'isImage2Loaded' is assigned a value but never used   no-unused-vars
+  Line 50:9:   'handleImageLoad' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
