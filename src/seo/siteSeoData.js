@@ -17,6 +17,11 @@ export const siteSeo = {
     addressRegion: "경기도",
     addressLocality: "평택시",
     streetAddress: "고덕국제화지구 Aab-13BL",
+    block: "Aab-13BL",
+    households: "996세대",
+    scale: "총 996세대",
+    unitTypes: ["59㎡", "84㎡"],
+    brand: "ELIF",
     brands: ["엘리프 고덕 센트럴하이", "ELIF", "계룡건설"],
     navigationSchemaName: "엘리프 고덕 센트럴하이 주요 메뉴",
   },
@@ -24,7 +29,16 @@ export const siteSeo = {
   keywords: [
     "엘리프 고덕 센트럴하이",
     "평택 고덕 엘리프 센트럴하이",
-    ,
+    "고덕 엘리프",
+    "고덕국제화지구 Aab-13BL",
+    "엘리프 고덕 센트럴하이 분양",
+    "엘리프 고덕 센트럴하이 청약",
+    "엘리프 고덕 센트럴하이 모집공고",
+    "엘리프 고덕 센트럴하이 공급안내",
+    "엘리프 고덕 센트럴하이 언론보도",
+    "엘리프 고덕 센트럴하이 보도자료",
+    "엘리프 고덕 센트럴하이 모델하우스",
+    "엘리프 고덕 센트럴하이 방문예약",
   ],
 };
 
@@ -85,8 +99,11 @@ export const seoNavigation = [
   },
   {
     name: "홍보센터",
-    path: "/Promotion/Customer",
-    children: [{ name: "관심고객등록", path: "/Promotion/Customer" }],
+    path: "/Promotion/Press",
+    children: [
+      { name: "언론보도", path: "/Promotion/Press" },
+      { name: "관심고객등록", path: "/Promotion/Customer" },
+    ],
   },
 ];
 
@@ -98,7 +115,7 @@ const page = ({
   image = siteSeo.ogImage,
   priority = 0.8,
   changefreq = "weekly",
-  robots = "index, follow, max-snippet:-1, max-image-preview:large",
+  robots = "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
 }) => ({
   path,
   title,
@@ -287,6 +304,17 @@ export const seoPages = {
     changefreq: "daily",
   }),
 
+  press: page({
+    path: "/Promotion/Press",
+    title: "언론보도 | 엘리프 고덕 센트럴하이",
+    description:
+      "엘리프 고덕 센트럴하이 언론보도 페이지입니다. 평택 고덕국제화지구 Aab-13BL 공급 정보, 청약, 입지환경, 모델하우스 방문예약 관련 공식 보도자료와 분양 소식을 확인하세요.",
+    menu: "홍보센터",
+    image: "/img/og/main.jpg",
+    priority: 0.9,
+    changefreq: "daily",
+  }),
+
   notFound: page({
     path: "/404",
     title: "페이지를 찾을 수 없습니다 | 엘리프 고덕 센트럴하이",
@@ -299,23 +327,54 @@ export const seoPages = {
   }),
 };
 
+const normalizeSeoPath = (pathname = "/") => {
+  let cleanPath = pathname || "/";
+
+  try {
+    if (/^https?:\/\//.test(cleanPath)) {
+      cleanPath = new URL(cleanPath).pathname;
+    }
+  } catch {
+    cleanPath = "/";
+  }
+
+  cleanPath = decodeURI(cleanPath)
+    .split("?")[0]
+    .split("#")[0]
+    .replace(/\/$/, "");
+
+  return cleanPath.toLowerCase() || "/";
+};
+
 export const seoPathMap = Object.fromEntries(
-  Object.entries(seoPages).map(([key, value]) => [value.path.toLowerCase(), key])
+  Object.entries(seoPages).map(([key, value]) => [
+    normalizeSeoPath(value.path),
+    key,
+  ])
+);
+
+export const seoPageList = Object.values(seoPages).filter(
+  (item) => item.robots !== "noindex, follow"
 );
 
 export const getAbsoluteUrl = (path = "/") => {
   if (/^https?:\/\//.test(path)) return path;
-  return `${siteSeo.siteUrl}${path}`;
+
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+
+  return `${siteSeo.siteUrl}${normalizedPath}`;
 };
 
 export const getSeoPageByPath = (pathname = "/") => {
-  const decodedPath = decodeURI(pathname).replace(/\/$/, "") || "/";
-  const normalizedPath = decodedPath.toLowerCase();
+  const normalizedPath = normalizeSeoPath(pathname);
   const exactKey = seoPathMap[normalizedPath];
 
   if (exactKey) return seoPages[exactKey];
 
+  if (normalizedPath.endsWith("/press")) return seoPages.press;
+  if (normalizedPath.includes("/promotion/press")) return seoPages.press;
   if (normalizedPath.endsWith("/customer")) return seoPages.customer;
+  if (normalizedPath.includes("/promotion/customer")) return seoPages.customer;
 
   return seoPages.notFound;
 };

@@ -127,7 +127,7 @@ const buildProjectSchema = () => ({
 
 const buildWebPageSchema = (page) => ({
   "@context": "https://schema.org",
-  "@type": "WebPage",
+  "@type": page.pageType || "WebPage",
   "@id": `${getAbsoluteUrl(page.path)}#webpage`,
   url: getAbsoluteUrl(page.path),
   name: page.title,
@@ -160,6 +160,7 @@ const SEO = ({ page }) => {
     buildNavigationSchema(),
     buildWebPageSchema(page),
     buildBreadcrumbSchema(page),
+    ...(page.extraSchemas || []),
   ];
 
   return (
@@ -170,7 +171,7 @@ const SEO = ({ page }) => {
       <meta name="robots" content={page.robots} />
       <link rel="canonical" href={canonicalUrl} />
 
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={page.ogType || "website"} />
       <meta property="og:locale" content={siteSeo.locale} />
       <meta property="og:site_name" content={siteSeo.siteName} />
       <meta property="og:title" content={page.title} />
@@ -184,6 +185,22 @@ const SEO = ({ page }) => {
       <meta name="twitter:title" content={page.title} />
       <meta name="twitter:description" content={page.description} />
       <meta name="twitter:image" content={imageUrl} />
+
+      {page.article?.publishedTime && (
+        <meta
+          property="article:published_time"
+          content={page.article.publishedTime}
+        />
+      )}
+      {page.article?.modifiedTime && (
+        <meta
+          property="article:modified_time"
+          content={page.article.modifiedTime}
+        />
+      )}
+      {page.article?.section && (
+        <meta property="article:section" content={page.article.section} />
+      )}
 
       {schemas.map((schema, index) => (
         <script key={index} type="application/ld+json">

@@ -3,26 +3,12 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Promotion.module.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-
-const samplePress = [
-  {
-    id: 1,
-    title: "엘리프 고덕 센트럴하이 분양 안내",
-    date: "2024.07.21",
-    summary: "청주 지북동 949세대 분양 정보와 모델하우스 방문예약 안내.",
-    image: "/img/sample1.jpg",
-  },
-  {
-    id: 2,
-    title: "청주 지북동 주거 가치 안내",
-    date: "2024.07.20",
-    summary: "미래 가치와 개발계획 발표.",
-    image: "/img/sample2.jpg",
-  },
-];
+import { pressArticles } from "./pressArticles";
 
 function PressList() {
   const navigate = useNavigate();
+  const samplePress = pressArticles;
+
   return (
     <>
       <Header />
@@ -41,7 +27,7 @@ function PressList() {
             key={item.id}
             className={styles.pressItem}
             style={{ cursor: "pointer" }}
-            onClick={() => navigate(`/Promotion/Press/${item.id}`)}
+            onClick={() => navigate(`/Promotion/Press/${item.slug || item.id}`)}
           >
             <img src={item.image} alt={item.title} className={styles.pressImg} />
             <div>
